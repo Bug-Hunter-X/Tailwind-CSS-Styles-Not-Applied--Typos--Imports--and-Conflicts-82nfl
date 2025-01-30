@@ -1,0 +1,9 @@
+This error occurs when Tailwind CSS directives aren't being applied correctly to HTML elements.  This can manifest in several ways, such as styles not being applied at all or being applied incorrectly.  Common causes include typos in class names, incorrect import statements, or conflicts with other CSS.  The following example demonstrates how a simple typo can lead to this issue:
+
+```html
+<div class="bg-blue-500 p-4 text-white">
+  This should be blue...
+</div>
+```
+
+If you misspelled `bg-blue-500` (e.g., `bg-blue-50`), Tailwind wouldn't recognize the class, and the div would not be styled as intended.  Another common issue is forgetting to include the correct Tailwind directives in your CSS files or having a conflict with custom CSS rules that override Tailwind styles.
